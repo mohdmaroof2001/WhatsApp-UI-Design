@@ -105,10 +105,27 @@ class StatusPage extends StatelessWidget {
           ),
         ],
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        child: Icon(Icons.camera_alt),
-        backgroundColor: Colors.teal[800],
+      floatingActionButton: Column(
+        mainAxisAlignment: MainAxisAlignment.end,
+        children: [
+          SizedBox(
+            width: 45,
+            height: 45,
+            child: FloatingActionButton(
+              onPressed: () {},
+              child: Icon(Icons.edit),
+              backgroundColor: Colors.grey,
+            ),
+          ),
+          SizedBox(
+            height: 15,
+          ),
+          FloatingActionButton(
+            onPressed: () {},
+            child: Icon(Icons.camera_alt),
+            backgroundColor: Colors.teal[800],
+          ),
+        ],
       ),
     );
   }

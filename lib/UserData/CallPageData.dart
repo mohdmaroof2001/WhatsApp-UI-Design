@@ -18,10 +18,12 @@ class CallData {
   static Icon callrec = Icon(
     Icons.call_received,
     color: Colors.green,
+    size: 18,
   );
   static Icon callmes = Icon(
     Icons.call_missed,
     color: Colors.red,
+    size: 18,
   );
 }
 

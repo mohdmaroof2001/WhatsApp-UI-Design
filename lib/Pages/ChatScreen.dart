@@ -33,10 +33,13 @@ class _ChatScreenState extends State<ChatScreen> {
                 ),
                 subtitle: Row(
                   children: [
-                    Icon(
-                      Icons.done_all,
-                      size: 22,
-                      color: Colors.black54,
+                    // Icon(
+                    //   Icons.done_all,
+                    //   size: 20,
+                    //   color: Colors.black54,
+                    // ),
+                    Container(
+                      child: chateData[i].revTick,
                     ),
                     SizedBox(
                       width: 5,
