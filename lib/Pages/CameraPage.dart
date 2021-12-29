@@ -1,12 +1,12 @@
 // ignore_for_file: file_names, prefer_const_constructors, prefer_const_literals_to_create_immutables
 
-// import 'package:camera/camera.dart';
+// import 'package:camera/camera.dart'; //main
 import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 
-// late List<CameraDescription> cameras;
+// late List<CameraDescription> cameras; //main
 
 class CameraPage extends StatefulWidget {
   // const CameraPage({Key? key}) : super(key: key);
@@ -19,10 +19,10 @@ class _CameraPageState extends State<CameraPage> {
   final ImagePicker _picker = ImagePicker();
   String? imagePath;
 
-  // late CameraController controller;
+  // late CameraController controller;  //main
   // XFile? pictureFile;
   // @override
-  // void initState() {
+  // void initState() {   //main
   //   super.initState();
   //   controller = CameraController(cameras[0], ResolutionPreset.max);
   //   controller.initialize().then((_) {
@@ -47,7 +47,7 @@ class _CameraPageState extends State<CameraPage> {
 
   @override
   Widget build(BuildContext context) {
-    // if (!controller.value.isInitialized) {
+    // if (!controller.value.isInitialized) {  // main
     //   return Container();
     // }
     return Scaffold(
@@ -108,6 +108,7 @@ class _CameraPageState extends State<CameraPage> {
         ),
       ],
     )
+        // main
         //      Stack(
         //   children: [
         //     Container(
