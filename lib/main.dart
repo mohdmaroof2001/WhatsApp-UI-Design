@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp/Pages/CameraPage.dart';
 import 'package:whatsapp/Pages/TabBar.dart';
-import 'package:camera/camera.dart';
+// import 'package:camera/camera.dart';
 import 'dart:async';
 
 Future<void> main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  cameras = await availableCameras();
+  // WidgetsFlutterBinding.ensureInitialized();
+  // cameras = await availableCameras();
 
   runApp(MyApp1());
 }
